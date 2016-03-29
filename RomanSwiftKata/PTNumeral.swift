@@ -57,7 +57,11 @@ class PTNumeral {
         var roman = ""
         
         while arabic > 0 {
-            if arabic >= 4 {
+            if arabic >= 5 {
+                arabic -= 5
+                roman += "V"
+            }
+            else if arabic >= 4 {
                 arabic -= 4
                 roman += "IV"
             }
