@@ -17,7 +17,10 @@ class PTNumeral {
         var arabicValue = 0
         for index in numeral.characters.indices {
             let char = numeral[index]
-            let valueOfCurrentChar = characterMap[char]
+            var valueOfCurrentChar = characterMap[char]
+            if valueOfCurrentChar == nil {
+                valueOfCurrentChar = 0
+            }
             
             
             let nextIndex = index.successor()
