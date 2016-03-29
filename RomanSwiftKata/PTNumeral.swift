@@ -9,8 +9,20 @@
 import Foundation
 
 class PTNumeral {
-    func getArabicForNumeral(numeral :String) -> Int {
+    func getArabicForNumeral(numeral: String) -> Int {
         
+        var arabicValue = 0
+        for char in numeral.characters {
+            if char == "I" {
+                arabicValue += 1
+            }
+            else if char == "V" {
+                arabicValue += 5
+            }
+        }
+        return arabicValue
+        
+        /*
         if numeral == "II" {
             return 2
         }
@@ -22,5 +34,6 @@ class PTNumeral {
         }
         
         return 1
+        */
     }
 }
