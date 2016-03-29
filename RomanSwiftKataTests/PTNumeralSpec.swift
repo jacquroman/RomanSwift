@@ -22,6 +22,12 @@ class PTNumeralSpec: QuickSpec {
                     let arabic = numeral.getArabicForNumeral("I")
                     expect(arabic).to(equal(1))
                 }
+                
+                it("return 2 when II entered") {
+                    let numeral = PTNumeral()
+                    let arabic = numeral.getArabicForNumeral("II")
+                    expect(arabic).to(equal(2))
+                }
             })
         }
         
