@@ -51,14 +51,15 @@ class PTNumeral {
         return arabicValue
     }
     
-    func getRomanForArabic(arabic: Int) -> String {
-        if arabic == 2 {
-            return "II"
-        }
-        else if arabic == 3 {
-            return "III"
-        }
+    func getRomanForArabic(arabicArg: Int) -> String {
+        var arabic = arabicArg
         
-        return "I"
+        var roman = ""
+        
+        while arabic > 0 {
+            arabic -= 1
+            roman += "I"
+        }
+        return roman
     }
 }
