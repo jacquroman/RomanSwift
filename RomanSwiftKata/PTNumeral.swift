@@ -14,7 +14,10 @@ class PTNumeral {
         let characterMap: [Character: Int] = ["I" : 1,
                                               "V" : 5,
                                               "X" : 10,
-                                              "C" : 100]
+                                              "L" : 50,
+                                              "C" : 100,
+                                              "D" : 500,
+                                              "M" : 1000]
         
         var arabicValue = 0
         for index in numeral.characters.indices {
