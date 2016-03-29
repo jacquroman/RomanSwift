@@ -15,6 +15,7 @@
 		2AA361761CAAB520004F1399 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA361741CAAB520004F1399 /* LaunchScreen.storyboard */; };
 		2AA361811CAAB520004F1399 /* RomanSwiftKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA361801CAAB520004F1399 /* RomanSwiftKataTests.swift */; };
 		2AA3618C1CAAB6BA004F1399 /* PTNumeralSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA3618B1CAAB6BA004F1399 /* PTNumeralSpec.swift */; };
+		2AA3618E1CAAB88D004F1399 /* PTNumeral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA3618D1CAAB88D004F1399 /* PTNumeral.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		2AA361801CAAB520004F1399 /* RomanSwiftKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RomanSwiftKataTests.swift; sourceTree = "<group>"; };
 		2AA361821CAAB520004F1399 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AA3618B1CAAB6BA004F1399 /* PTNumeralSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTNumeralSpec.swift; sourceTree = "<group>"; };
+		2AA3618D1CAAB88D004F1399 /* PTNumeral.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PTNumeral.swift; sourceTree = "<group>"; };
 		300F3F0D96BA04DB11A2535D /* Pods-RomanSwiftKataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomanSwiftKataTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RomanSwiftKataTests/Pods-RomanSwiftKataTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A3583788FE083CA764F1FA5 /* Pods_RomanSwiftKataTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RomanSwiftKataTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A571B03DFB9352BA8BD3B14 /* Pods-RomanSwiftKataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RomanSwiftKataTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RomanSwiftKataTests/Pods-RomanSwiftKataTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				2AA3616B1CAAB520004F1399 /* AppDelegate.swift */,
 				2AA3616D1CAAB520004F1399 /* ViewController.swift */,
+				2AA3618D1CAAB88D004F1399 /* PTNumeral.swift */,
 				2AA3616F1CAAB520004F1399 /* Main.storyboard */,
 				2AA361721CAAB520004F1399 /* Assets.xcassets */,
 				2AA361741CAAB520004F1399 /* LaunchScreen.storyboard */,
@@ -277,6 +280,7 @@
 			files = (
 				2AA3616E1CAAB520004F1399 /* ViewController.swift in Sources */,
 				2AA3616C1CAAB520004F1399 /* AppDelegate.swift in Sources */,
+				2AA3618E1CAAB88D004F1399 /* PTNumeral.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

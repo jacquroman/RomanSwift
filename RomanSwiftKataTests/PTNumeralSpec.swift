@@ -6,6 +6,8 @@
 //  Copyright © 2016 pillarKata. All rights reserved.
 //
 
+@testable import RomanSwiftKata
+
 import XCTest
 import Quick
 import Nimble
@@ -17,7 +19,7 @@ class PTNumeralSpec: QuickSpec {
             context("when numeral entered", { 
                 it("returns 1 when I entered") {
                     let numeral = PTNumeral()
-                    let arabic = numeral.getArabicFromNumeral("I")
+                    let arabic = numeral.getArabicForNumeral("I")
                     expect(arabic).to(equal(1))
                 }
             })
