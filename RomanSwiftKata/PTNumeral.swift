@@ -13,6 +13,9 @@ class PTNumeral {
         if numeral == "II" {
             return 2
         }
+        else if numeral == "V" {
+            return 5
+        }
         
         return 1
     }
