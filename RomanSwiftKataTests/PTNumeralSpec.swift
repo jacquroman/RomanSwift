@@ -74,6 +74,13 @@ class PTNumeralSpec: QuickSpec {
                     expect(arabic).to(equal(996))
                 }
             })
+            
+            context("when arabic enterd", { 
+                it("should return I when 1 entered") {
+                    let roman = numeral.getNumeralForArabic(1)
+                    expect(roman).to(equal("I"))
+                }
+            })
         }
         
     }
