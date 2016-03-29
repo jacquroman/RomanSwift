@@ -52,6 +52,10 @@ class PTNumeral {
     }
     
     func getRomanForArabic(arabic: Int) -> String {
+        if arabic == 2 {
+            return "II"
+        }
+        
         return "I"
     }
 }
