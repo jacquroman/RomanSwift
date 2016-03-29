@@ -90,6 +90,11 @@ class PTNumeralSpec: QuickSpec {
                     let roman = numeral.getRomanForArabic(3)
                     expect(roman).to(equal("III"))
                 }
+                
+                it("should return IV when 4 entered") {
+                    let roman = numeral.getRomanForArabic(4)
+                    expect(roman).to(equal("IV"))
+                }
             })
         }
         
