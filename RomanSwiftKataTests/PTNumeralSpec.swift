@@ -34,6 +34,11 @@ class PTNumeralSpec: QuickSpec {
                     expect(arabic).to(equal(3))
                 }
                 
+                it("should return 4 when IV entered") {
+                    let arabic = numeral.getArabicForNumeral("IV")
+                    expect(arabic).to(equal(4))
+                }
+                
                 it("should return 5 when V entered") {
                     let arabic = numeral.getArabicForNumeral("V")
                     expect(arabic).to(equal(5))
