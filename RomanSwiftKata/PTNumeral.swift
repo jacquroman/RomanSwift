@@ -52,30 +52,20 @@ class PTNumeral {
     }
     
     func getRomanForArabic(arabicArg: Int) -> String {
-        var arabic = arabicArg
         
+        let arabicValues = [10, 9, 5, 4, 1]
+        let arabicRomans = ["X", "IX", "V", "IV", "I"]
+        
+        var arabic = arabicArg
         var roman = ""
         
         while arabic > 0 {
-            if arabic >= 10 {
-                arabic -= 10
-                roman += "X"
-            }
-            else if arabic >= 9 {
-                arabic -= 9
-                roman += "IX"
-            }
-            else if arabic >= 5 {
-                arabic -= 5
-                roman += "V"
-            }
-            else if arabic >= 4 {
-                arabic -= 4
-                roman += "IV"
-            }
-            else if arabic >= 1 {
-                arabic -= 1
-                roman += "I"
+            for value in arabicValues {
+                if arabic >= value {
+                    arabic -= value
+                    roman += arabicRomans[arabicValues.indexOf(value)!]
+                    break
+                }
             }
         }
         return roman
