@@ -11,10 +11,11 @@ import Foundation
 class PTNumeral {
     func getArabicForNumeral(numeral :String) -> Int {
         
-        
-        
         if numeral == "II" {
             return 2
+        }
+        else if numeral == "III" {
+            return 3
         }
         else if numeral == "V" {
             return 5
