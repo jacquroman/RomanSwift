@@ -17,16 +17,22 @@ class PTNumeralSpec: QuickSpec {
         
         describe("PTNumeral") {
             context("when numeral entered", { 
-                it("returns 1 when I entered") {
+                it("should return 1 when I entered") {
                     let numeral = PTNumeral()
                     let arabic = numeral.getArabicForNumeral("I")
                     expect(arabic).to(equal(1))
                 }
                 
-                it("return 2 when II entered") {
+                it("should return 2 when II entered") {
                     let numeral = PTNumeral()
                     let arabic = numeral.getArabicForNumeral("II")
                     expect(arabic).to(equal(2))
+                }
+                
+                it("should return 5 when V entered") {
+                    let numeral = PTNumeral()
+                    let arabic = numeral.getArabicForNumeral("V")
+                    expect(arabic).to(equal(5))
                 }
             })
         }
