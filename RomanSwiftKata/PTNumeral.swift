@@ -50,4 +50,8 @@ class PTNumeral {
         
         return arabicValue
     }
+    
+    func getRomanForArabic(arabic: Int) -> String {
+        return "I"
+    }
 }
