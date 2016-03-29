@@ -53,8 +53,8 @@ class PTNumeral {
     
     func getRomanForArabic(arabicArg: Int) -> String {
         
-        let arabicValues = [50, 10, 9, 5, 4, 1]
-        let arabicRomans = ["L", "X", "IX", "V", "IV", "I"]
+        let arabicValues = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]
+        let arabicRomans = ["M", "CM", "D", "CD", "C", "LC", "L", "XL", "X", "IX", "V", "IV", "I"]
         
         var arabic = arabicArg
         var roman = ""
