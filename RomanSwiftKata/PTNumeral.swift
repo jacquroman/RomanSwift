@@ -12,7 +12,8 @@ class PTNumeral {
     func getArabicForNumeral(numeral: String) -> Int {
         
         let characterMap: [Character: Int] = ["I" : 1,
-                                              "V" : 5]
+                                              "V" : 5,
+                                              "X" : 10]
         
         var arabicValue = 0
         for index in numeral.characters.indices {
