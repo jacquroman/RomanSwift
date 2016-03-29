@@ -11,13 +11,32 @@ import Foundation
 class PTNumeral {
     func getArabicForNumeral(numeral: String) -> Int {
         
+        let characterMap: [Character: Int] = ["I" : 1,
+                                              "V" : 5]
+        
         var arabicValue = 0
-        for char in numeral.characters {
-            if char == "I" {
-                arabicValue += 1
+        for index in numeral.characters.indices {
+            let char = numeral[index]
+            let valueOfCurrentChar = characterMap[char]
+            
+            
+            let nextIndex = index.successor()
+            var nextChar: Character?
+            if nextIndex != numeral.endIndex {
+                nextChar = numeral[nextIndex]
             }
-            else if char == "V" {
-                arabicValue += 5
+            
+            var valueOfNextChar: Int?
+            if nextChar != nil {
+                valueOfNextChar = characterMap[nextChar!]
+            }
+            
+            
+            if (valueOfNextChar > valueOfCurrentChar) {
+                arabicValue -= valueOfCurrentChar!
+            }
+            else {
+                arabicValue += valueOfCurrentChar!
             }
         }
         
